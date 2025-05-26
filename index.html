@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Task 1</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div ><a href="index.html"><img class="logo" src="logo.png" alt=""></a></div>
+            <ul class="links">
+                <li><a class="links" href="#">Home</a></li>
+                <li><a class="links" href="#">Products</a></li>
+                <li><a class="links" href="#">Contact</a></li>
+            </ul>
+            <div class="toggle links"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown ">
+                <li><a class="links" href="#">Home</a></li>
+                <li><a class="links" href="#">Products</a></li>
+                <li><a class="links" href="#">Contact</a></li>
+        </div>
+    </header>
+    <section class="main-content">
+    <main>
+        <h1 >Snack Smarter, Live Better!</h1>
+        <p>
+            Fuel your day with our delicious, wholesome snacks that nourish both body and mind. Packed with natural ingredients, our snacks are the perfect balance of taste and nutrition designed to keep you energized, satisfied, and guilt-free. Whether you're on the go or winding down, choose from our wide variety of snacks, all free from artificial additives. Healthy eating has never been this easy or tasty!
+        </p>
+        <div class="btnn"><a class="btn" href="#">Products</a></div>
+        
+    </main>
+    </section>
+    <section class="footer-section">
+        <footer>
+        <div><h3>follow us on:</h3></div>
+        <div class="footer-links">
+            <ul >
+                <li ><a class="footer-links" href="#">@instagram</a></li>
+                <li ><a class="footer-links" href="#">@twitter</a></li>
+                <li ><a class="footer-links" href="#">@facebook</a></li>
+            </ul>
+        </div>
+        <h4>made with &#x2665;&#xfe0f;</h4>
+    </footer>
+</section>
+<script>
+    const toggleBtn=document.querySelector('.toggle')
+    const toggleBtnIcon=document.querySelector('.toggle i')
+    const dropDown=document.querySelector('.dropdown')
+    toggleBtn.onclick=function(){
+        dropDown.classList.toggle('open')
+    }
+
+    toggleBtnIcon.classList=isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+</script>
+</body>
+</html>
